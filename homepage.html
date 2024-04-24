@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="homepage.css">
+ 
+</head>
+<body class="gradient-background">
+  <div class="navbar">
+    <div class="profile">
+      <span id="initialLetter"></span>
+      <div class="dropdown" id="dropdown">
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="#" id="signOut">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Welcome to the Homepage</h1>
+
+  <button id="addQuestionBtn">Add Question</button> 
+
+  <div class="card" id="card1">
+    <div class="card-content">
+      <h2>General Knowledge</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <div class="card" id="card2">
+    <div class="card-content">
+      <h2>General Knowledge</h2>
+      <p id="score2"></p>
+    </div>
+  </div>
+
+  <div id="questionForm" class="card" style="display: none;">
+    <div class="card-content">
+      <h2>Add New Question</h2>
+      <form id="newQuestionForm">
+        <label for="question">Question:</label><br>
+        <input type="text" id="question" name="question" required><br>
+        <label for="option1">Option 1:</label><br>
+        <input type="text" id="option1" name="option1" required><br>
+        <label for="option2">Option 2:</label><br>
+        <input type="text" id="option2" name="option2" required><br>
+        <label for="option3">Option 3:</label><br>
+        <input type="text" id="option3" name="option3" required><br>
+        <label for="option4">Option 4:</label><br>
+        <input type="text" id="option4" name="option4" required><br>
+        <label for="correctAnswer">Correct Answer:</label><br>
+        <input type="text" id="correctAnswer" name="correctAnswer" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    
+    </div>
+  </div>
+
+  <script src="homepage.js"></script>
+ 
+</body>
+</html>

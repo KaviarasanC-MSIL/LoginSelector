@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="title">Quiz App</h1>
+
+  <div class="container">
+    <div class="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <select id="loginRole" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="signup">
+      <h2>Signup</h2>
+      <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <select id="signupRole" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="loader" id="loader"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
